@@ -1,0 +1,19 @@
+{
+  "name": "stupid-cli",
+  "version": "1.0.0",
+  "description": "如何制作一个CLI工具",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gnosis23/stupid-cli.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gnosis23/stupid-cli/issues"
+  },
+  "homepage": "https://github.com/gnosis23/stupid-cli#readme"
+}
