@@ -54,4 +54,8 @@ inquirer.prompt([question])
 ## 第四步：git
 
 
-## .bin
+## Installation
+```sh
+npm link
+stupid-cli aaa
+```

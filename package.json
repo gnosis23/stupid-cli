@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "如何制作一个CLI工具",
   "main": "index.js",
+  "bin": {
+    "stupid-cli": "./bin/stupid-cli.js"
+  },
   "scripts": {
     "test": "node src/index.js"
   },
