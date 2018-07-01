@@ -19,6 +19,13 @@ stupid-cli <directory>
 
 ## 第一步：复制骨架代码
 假设我们要初始化一个 vue 项目，首先我们把骨架文件扔到 template 文件夹下面，里面要有 package.json 文件，用来记录它的依赖。
+```javascript
+const fs = require('fs-extra');
+
+log(`copy template to ${workingPath}`);
+fs.copySync(templatePath, workingPath);
+```
+
 
 ## 第二步：npm install
 
