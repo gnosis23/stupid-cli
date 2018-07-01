@@ -28,9 +28,17 @@ fs.copySync(templatePath, workingPath);
 
 
 ## 第二步：npm install
-
+使用 child_process.execSync 调用 npm install 命令。
+```javascript
+const cwd = process.chdir(dirName);
+log(`cwd ${chalk.yellow(cwd)}`);
+log('npm install --verbose');
+execSync('npm install --verbose', {stdio: 'inherit'});
+log(chalk.green('npm install success!'));
+```
 
 ## 第三步：修改变量
+
 
 
 ## 第四步：git

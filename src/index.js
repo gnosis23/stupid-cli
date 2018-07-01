@@ -29,3 +29,13 @@ if (!packageJson.devDependencies) {
   log(`${chalk.red('resolve dependencies error')}`);
   process.exit(1);
 }
+
+// npm install
+log('');
+const cwd = process.chdir(dirName);
+log(`cwd ${chalk.yellow(cwd)}`);
+log('npm install --verbose');
+execSync('npm install --verbose', {stdio: 'inherit'});
+log(chalk.green('npm install success!'));
+
+
