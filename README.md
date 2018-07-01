@@ -38,8 +38,20 @@ log(chalk.green('npm install success!'));
 ```
 
 ## 第三步：修改变量
-
+使用 inquirer 来获取用户输入。
+```javascript
+inquirer.prompt([question])
+  .then(answer => {
+    packageJson.name = answer.project;
+    fs.writeFileSync(
+      packagePath,
+      JSON.stringify(packageJson, null, 2) + os.EOL
+    );
+  });
+```
 
 
 ## 第四步：git
 
+
+## .bin
